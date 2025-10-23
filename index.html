@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Nasir Uddin - Portfolio</title>
+    <style>
+        /* ========== Global Styles ========== */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* ========== Header ========== */
+        header {
+            background: linear-gradient(135deg, #0077b6, #00b4d8);
+            color: white;
+            text-align: center;
+            padding: 2rem 0 3rem 0;
+        }
+
+        header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        header h1 {
+            margin-bottom: 0.3rem;
+            font-size: 2.2rem;
+        }
+
+        header nav {
+            margin-top: 1rem;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* ========== Sections ========== */
+        .section {
+            padding: 3rem 0;
+        }
+
+        .bg-light {
+            background: #f1f1f1;
+        }
+
+        h2 {
+            text-align: center;
+            color: #0077b6;
+            margin-bottom: 1rem;
+        }
+
+        /* ========== Skills ========== */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #00b4d8;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            background: #0096c7;
+        }
+
+        /* ========== Projects ========== */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .project {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .project h3 {
+            color: #0077b6;
+        }
+
+        /* ========== Contact & Buttons ========== */
+        .contact-links {
+            text-align: center;
+        }
+
+        .contact-links a {
+            display: inline-block;
+            margin: 8px;
+            padding: 10px 18px;
+            border-radius: 25px;
+            background: #0077b6;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .contact-links a:hover {
+            background: #023e8a;
+        }
+
+        /* ========== Footer ========== */
+        footer {
+            background: #023e8a;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+
+        /* ========== Responsive ========== */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            header nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- প্রোফাইল ছবি -->
+        <img src="https://ik.imagekit.io/nasirbam/E-Mail%20Signature%20Pic.png?updatedAt=1751091858587" alt="Md. Nasir Uddin">
+        <h1>Md. Nasir Uddin</h1>
+        <p>Registered Nurse | Healthcare Professional | Blogger</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>আমি একজন নিবন্ধিত নার্স এবং স্বাস্থ্যসেবার উন্নয়নে কাজ করছি। মানুষের সেবা করাই আমার পেশা ও প্রেরণা।
+            পাশাপাশি ওয়েব ডিজাইন ও অনলাইন প্ল্যাটফর্মে কাজ করার আগ্রহ রয়েছে। আমি পেশাগত দায়িত্বের পাশাপাশি
+            স্বাস্থ্য সচেতনতা ও শিক্ষামূলক কার্যক্রমে যুক্ত আছি।</p>
+        </div>
+    </section>
+
+    <section id="education" class="section bg-light">
+        <div class="container">
+            <h2>Education</h2>
+            <ul>
+                <li>B.Sc in Nursing – Mymensingh Nursing College</li>
+                <li>Diploma in Nursing Science and Midwifery – Bangladesh Nursing Council</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">Patient Care</div>
+                <div class="skill">Leadership</div>
+                <div class="skill">HTML & CSS</div>
+                <div class="skill">Communication</div>
+                <div class="skill">Teamwork</div>
+                <div class="skill">Health Education</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <h3>Health Awareness Blog</h3>
+                    <p>WordPress ভিত্তিক একটি ব্লগ যেখানে সাধারণ জনগণের জন্য স্বাস্থ্য সচেতনতা বিষয়ক লেখা প্রকাশ করা হয়।</p>
+                </div>
+                <div class="project">
+                    <h3>Nursing Info Portal</h3>
+                    <p>বাংলাদেশের নার্সদের জন্য তথ্য ও রিসোর্স শেয়ারিং ওয়েবসাইট।</p>
+                </div>
+                <div class="project">
+                    <h3>Community Health Campaign</h3>
+                    <p>স্বাস্থ্যসেবা পৌঁছে দিতে স্থানীয় পর্যায়ে স্বেচ্ছাসেবক ভিত্তিক কর্মসূচি পরিচালনা।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-links">
+                <p>📧 <a href="mailto:mdnasirnaznin@gmail.com">mdnasirnaznin@gmail.com</a></p>
+                <p>📞 <a href="tel:+8801751458288">+8801751458288</a></p>
+                <a href="https://www.facebook.com/nasir.naznin" target="_blank">Facebook</a>
+                <a href="https://www.facebook.com/nasir.naznin" target="_blank">LinkedIn</a>
+                <a href="https://www.facebook.com/nasir.naznin" target="_blank">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Md. Nasir Uddin. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
